@@ -1,0 +1,8 @@
+Bài toán: Hệ thống đặt vé máy bay
+
+Bạn cần xây dựng một hệ thống đặt vé máy bay, trong đó khách hàng có thể chọn loại vé (phổ thông hoặc hạng thương gia) và tùy chọn hãng bay (ví dụ: Vietnam Airlines, VietJet Air). Mỗi hãng bay sẽ có các quy định riêng về việc đặt vé, chẳng hạn như chính sách hành lý, chỗ ngồi, và dịch vụ đi kèm (như suất ăn).
+
+Yêu cầu: Tạo ra một hệ thống sử dụng Abstract Factory để cung cấp các đối tượng vé khác nhau (Phổ thông, Hạng thương gia) từ các hãng bay khác nhau (Vietnam Airlines, VietJet Air).
+Đầu vào: Hãng bay và loại vé mà khách hàng chọn.
+Đầu ra: Thông tin vé chi tiết bao gồm chính sách hành lý, dịch vụ đi kèm, và chỗ ngồi tương ứng với hãng bay và loại vé.
+Hãy triển khai hệ thống này theo cách mà Abstract Factory có thể tạo ra các đối tượng vé từ các hãng bay và loại vé khác nhau.

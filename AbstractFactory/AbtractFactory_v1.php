@@ -179,22 +179,6 @@ class ve_pho_thong extends ve
 {
     protected $name = 'Phổ Thông';
 
-    public function getChinhSachHanhLy()
-    {
-        return '20kg ký gửi, 7kg xách tay';
-    }
-
-
-    public function getChoNgoi()
-    {
-        return 'Ghế hạng Phổ Thông - Khoảng cách giữa các ghế: 81 cm';
-    }
-
-
-    public function getSuatAn()
-    {
-        return 'Bữa ăn nhẹ, Nước uống';
-    }
 }
 
 
@@ -202,20 +186,6 @@ class ve_thuong_gia extends ve
 {
     protected $name = 'Thương Gia';
 
-    public function getChinhSachHanhLy()
-    {
-        return '15kg ký gửi, 7kg xách tay';
-    }
-
-    public function getChoNgoi()
-    {
-        return 'Ghế hạng Phổ Thông - Khoảng cách giữa các ghế: 75 cm';
-    }
-
-    public function getSuatAn()
-    {
-        return 'Mua thêm';
-    }
 }
 
 
@@ -241,3 +211,18 @@ function clientCode(hangbayAbstract $hangBay)
 clientCode(new vietnam_airline());
 clientCode(new vietjet_air());
 
+
+/**
+ * uu diem: chi can create hang bay nao, thi hang bay do se tu co chinh sach va gia ve, suat an khac nhau
+ *
+ * nhuoc diem: nhin vao constructor cua vietnam_airline va cua vietjet_air, ta thay nhieu
+ * logic duoc thuc thi trong ham khoi tao, dong thoi chung ta hay chu y, neu thuc hien theo cach nay, ve dang duoc gan
+ * lien voi hang bay, co nghia mot hang bay se dong thoi khoi tao ca ve thuong gia va ve pho thong. chung ta co bai toan sau:
+ *   Neu ta co 1 user va chi muon dat 1 ve pho thong, nhu vay ta se co 1 class hang bay, 1 class ve thuong gia, va 1 class ve pho thong, ,
+ * vay tong cong can 3 class. Con neu dung builder, thi chi can mot class hangbay, sau do hang bay nay tao cac class ve pho thong,
+ * va tra ve cho user, nhu vay chi can 1 class hangbay va 1 class ve phong thon, tong la 2 class. Ngoai ra la neu toi co mot logic
+ * dac biet la : User A dung hang bay vietnam_airline, dung ve thuong gia nhung ma co nhung quyen han cao hon , vay logic (set setChinhSachHanhLy, setSuatAn, setChoNgoi)
+ * nay se viet o dau? viet o clientCode: nope! tao mot function moi trong hangbay? roi function nay se viet lai 3 ham nay? oke do, tuy nhien cau hinh ban dau duoc viet
+ *trong construcor se bi du thua.
+ * Cai tien: viet mot class Ve_Builder, de lam muc dich tao ra cac loai ve
+ */

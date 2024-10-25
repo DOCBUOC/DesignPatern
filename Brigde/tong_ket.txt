@@ -1,0 +1,15 @@
+gom 2 thanh phần, một thành phần la abtraction, một thành phần la impleaments
+
+phần abtraction tra lời cho câu hỏi: phải làm những gì
+co nghia la abtraction se tao mot class cha, dinh nghia cac phuong thuc ma se lam doi voi mot san pham
+- dinh nghia cac lop con co the co (A,B,C)
+
+phần impleaments trả lời câu hỏi làm như thế nào
+dinh nghia mot interface liet ke cac chuc nang ma san pham nay co
+sau do tao cac lop con impleament cho interface nay (SP1, SP2, SP3)
+
+sau do ma clientCode se co cac ket qua khac nhau, dua vao cac lop con nay
+truyen cac lop con nay nhu mot tham so
+new A(sp1)
+new B(sp1)
+

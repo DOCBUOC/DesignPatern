@@ -1,0 +1,8 @@
+khi nao nen dung abtract factory:
+Khi ta có nhiều dòng sản phẩm, mỗi dòng sản phẩm này gồm nhiều thành phần, mỗi thành phần tham gia với nhau, mà nếu như
+lấy thành phần cua dòng sản phẩm này, thay thế cho thành phần của dòng sản phẩm khác, thì có thể không chạy được, hoặc lỗi
+
+
+cách triển khai:
+- cac dong san pham nen trien khai mot giao dien chung, giao dien nay dinh nghia cac phuong thuc ma se tuong tac voi san pham
+- co mot class san pham (lop cha) de cac san pham con extend

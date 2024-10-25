@@ -12,5 +12,4 @@ sau do ma clientCode se co cac ket qua khac nhau, dua vao cac lop con nay
 truyen cac lop con nay nhu mot tham so
 new A(sp1)
 new B(sp1)
-dvf
 
